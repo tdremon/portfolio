@@ -44,7 +44,7 @@ flowchart LR
 | 사례 | 한 줄 결론 |
 |---|---|
 | [01. GitOps 파이프라인의 안전장치](cases/01-gitops-pipeline.md) | 테스트가 깨진 커밋은 배포되지 않지만, 잘못된 배포 태그는 아무도 되돌리지 않는다 |
-| [02. HPA 오토스케일링](cases/02-autoscaling.md) | 21초 만에 2 → 4개로 늘려 평균 응답을 약 40% 줄였지만 꼬리 지연은 남았다 |
+| [02. HPA 오토스케일링](cases/02-autoscaling.md) | 21초 만에 2 → 4개로 늘려 평균 응답을 약 40% 줄였지만 p95는 여전히 느렸다 |
 | [03. 무중단 배포와 graceful shutdown](cases/03-graceful-shutdown.md) | 롤링 재시작의 5초 지연은 종료 중인 파드로 간 요청이었고 `preStop`으로 없앴다 |
 | [04. 장애 시나리오 11개 재현](cases/04-failure-series.md) | 종료 코드와 이벤트 문구로 원인을 갈라 내는 순서를 정리했다 |
 | [05. 노드 drain과 PDB](cases/05-node-drain.md) | 파드가 한 노드에 몰려 있으면 서비스가 끊기고, 엄격한 PDB는 작업을 멈춘다 |
